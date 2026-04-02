@@ -39,7 +39,7 @@ game/
 
 ## Development Notes
 
-I am still learning, and this game is part of that journey. Feedback is always welcome and helps me improve. 💓 This isn’t a prank, and don’t prank me!(¬`‸´¬)
+I am still learning, and this game is part of that journey. Feedback is always welcome and helps me improve. 💓 *This isn’t a prank, and don’t prank me!*(¬`‸´¬)
 
 ## Troubleshooting
 
