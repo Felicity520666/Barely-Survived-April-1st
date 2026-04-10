@@ -292,7 +292,10 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
+        if CurrentScreenName() == "main_menu":
+            xpos 0.89
+        else:
+            xpos gui.navigation_xpos
         yalign 0.5
 
         spacing gui.navigation_spacing
