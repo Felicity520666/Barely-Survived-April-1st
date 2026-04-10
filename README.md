@@ -1,5 +1,6 @@
 # Barely Survived April 1st
-If anyone asks you for money today, just pretend it's April fool... (What else can I say bro?)
+
+If anyone asks you for money today, just pretend it's April fools... (What else can I say? ߹𖥦߹)
 
 ## Play On itch.io
 
@@ -20,6 +21,7 @@ Umm don’t expect too much it’s literally just a prank...
 
 ## Run Locally
 
+I'd recommend playing on itch.io, but you can also:
 1. Install Ren'Py from <https://www.renpy.org/>
 2. Open the Ren'Py launcher
 3. Add this project folder
