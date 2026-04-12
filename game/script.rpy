@@ -1,7 +1,4 @@
-define pov = Character("Eileen")
-
-
-# The game starts here.
+define t = Character("Theo", color = "#ffa500")
 
 label start:
 
