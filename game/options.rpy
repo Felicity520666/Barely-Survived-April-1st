@@ -150,7 +150,7 @@ define config.save_directory = "BarelySurvivedApril1st-1775074158"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/no.png"
 
 
 ## Build configuration #########################################################
