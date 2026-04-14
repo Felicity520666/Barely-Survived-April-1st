@@ -4,7 +4,7 @@ If anyone asks you for money today, just pretend it's April fools... (What else 
 
 ## Play On itch.io
 
-[link for playing on itch.io](https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-03/april-fools-pranks-toilet-paper-0f758a.jpg)
+[link for playing on itch.io](https://drive.google.com/file/d/1Bgu93W1pG97vNtwbnu93zxW9Mk6mY8bA/view?usp=sharing)
 
 
 ## About The Game
@@ -17,11 +17,12 @@ Umm don’t expect too much it’s literally just a prank...
 - Choice-based dialogue moments 
 - Custom GUI and themed assets 
 - Built with Ren'Py 
+- Go to Preferences to adjust the settings and make the game more "Fool-Friendly" for the best experience
 - Jokes and jokes and more jokes, hopefully they are funny
 
 ## Run Locally
 
-I'd recommend playing on itch.io, but you can also:
+I'd recommend playing on itch.io, but you can also try:
 1. Install Ren'Py from <https://www.renpy.org/>
 2. Open the Ren'Py launcher
 3. Add this project folder
