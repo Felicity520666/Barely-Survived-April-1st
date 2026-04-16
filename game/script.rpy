@@ -12,6 +12,9 @@ label start:
     t "Ah, but I have to get ready for school... Can't be late again."
     scene tooth with fade
     play sound "freesound_community-bathroom-sink_1-94625.mp3"
-    pause 111
+    pause 3.0
+    scene put with irisin
+    pause 1.5
+    scene finish with dissolve
 
     return
