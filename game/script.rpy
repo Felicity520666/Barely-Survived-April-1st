@@ -19,6 +19,8 @@ label start:
     play sound "ding.mp3" volume 3.5
     pause 1.5
     scene brush with pushright
+    pause 2.0
+    scene wosh with vphunch
     play sound "fire.mp3"
     pause 4
     
