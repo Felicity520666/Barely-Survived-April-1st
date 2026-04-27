@@ -38,6 +38,12 @@ label start:
     scene hour with irisin
     play sound "later copy.mp3" volume 4.0
     pause 4.0
+    play music "the_mountain-school-130448.mp3" fadein 1.0
+    scene route with slideleft
+    pause 1.0
+    t "Ugh, so many pranks..."
+    scene school with pushright
+    t "Well, at least I'm not late for school."
 
 
     
