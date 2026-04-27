@@ -1,33 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 29, in script
-    scene mom with slideinleft
-  File "game/script.rpy", line 29, in <module>
-    scene mom with slideinleft
-                   ^^^^^^^^^^^
-NameError: name 'slideinleft' is not defined. Did you mean: 'slideleft'?
+  File "game/script.rpy", line 57, in script
+    show jack worry at smallleft with moveinright
+  File "game/script.rpy", line 57, in <module>
+    show jack worry at smallleft with moveinright
+                        ^^^^^^^^^                
+NameError: name 'smallleft' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 29, in script
-    scene mom with slideinleft
-  File "renpy/ast.py", line 1577, in execute
-    paired = renpy.python.py_eval(self.paired)
-             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "game/script.rpy", line 57, in script
+    show jack worry at smallleft with moveinright
+  File "renpy/ast.py", line 1357, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 726, in show_imspec
+    at_list = [renpy.python.py_eval(i) for i in at_list]
+               ~~~~~~~~~~~~~~~~~~~~^^^                  
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 29, in <module>
-    scene mom with slideinleft
-                   ^^^^^^^^^^^
-NameError: name 'slideinleft' is not defined. Did you mean: 'slideleft'?
+  File "game/script.rpy", line 57, in <module>
+    show jack worry at smallleft with moveinright
+                        ^^^^^^^^^                
+NameError: name 'smallleft' is not defined
 
 macOS-15.7.3-arm64-arm-64bit arm64
 Ren'Py 8.4.1.25072401
 Barely Survived April 1st 1.0
-Wed Apr 22 20:30:55 2026
+Mon Apr 27 09:33:26 2026
