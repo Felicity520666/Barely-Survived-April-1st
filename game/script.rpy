@@ -35,6 +35,11 @@ label start:
     t "Augh! Grow up, Mom!"
     m "Now get ready for school, kiddo! You don't want to be late."
     t "Fine..."
+    scene 2r with hpunch
+    play sound "myinstants.mp3" volume 2.5
+    pause 2.0
+    scene 2 with dissolve
+    pause 2.0
     scene hour with irisin
     play sound "later copy.mp3" volume 4.0
     pause 4.0
@@ -44,6 +49,7 @@ label start:
     t "Ugh, so many pranks..."
     scene school with pushright
     t "Well, at least I'm not late for school."
+
 
 
     

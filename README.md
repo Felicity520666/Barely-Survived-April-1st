@@ -22,7 +22,7 @@ Umm don’t expect too much it’s literally just a prank...
 
 ## Run Locally
 
-I'd recommend playing on itch.io, but you can also try:
+I'd recommend playing on itch.io, but if for some reason that doesn't work (ᵕ—ᴗ—), you can also try:
 1. Install Ren'Py from <https://www.renpy.org/>
 2. Open the Ren'Py launcher
 3. Add this project folder

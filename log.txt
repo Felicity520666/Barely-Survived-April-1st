@@ -1,18 +1,18 @@
-2026-04-27 00:02:01 UTC
+2026-04-27 00:27:42 UTC
 macOS-15.7.3-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
-Early init took 21 ms
-Loading error handling took 17 ms
-Loading script took 286 ms
-Loading save slot metadata took 12 ms
+Early init took 18 ms
+Loading error handling took 9 ms
+Loading script took 39 ms
+Loading save slot metadata took 8 ms
 Loading persistent took 0 ms
-Running init code took 28 ms
-Loading analysis data took 2 ms
+Running init code took 16 ms
+Loading analysis data took 1 ms
 Analyze and compile ATL took 0 ms
 Reloading save slot metadata took 2 ms
 Backing up script files to '/Users/felicity/Library/RenPy/backups/Barely Survived April 1st':
-Dump and make backups took 15 ms
+Dump and make backups took 14 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
 Initial gc took 12 ms
@@ -22,11 +22,11 @@ Init translation took 0 ms
 Cleaning stores took 0 ms
 Load screen analysis took 0 ms
 Analyze screens took 3 ms
-Save screen analysis took 5 ms
+Save screen analysis took 4 ms
 Save pyanalysis took 0 ms
-Save bytecode took 13 ms
+Save bytecode took 11 ms
 Running _start took 0 ms
-Interface start took 254 ms
+Interface start took 222 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -41,6 +41,6 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1470, 828) drawable=(2940, 1656)
 Maximum texture size: 4096x4096
 Cleaning stores took 0 ms
-Load screen analysis took 11 ms
+Load screen analysis took 16 ms
 Analyze screens took 0 ms
 Running _start took 1 ms
