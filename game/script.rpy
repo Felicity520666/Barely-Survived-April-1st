@@ -2,6 +2,16 @@ define t = Character("Theo", color = "#ffa500")
 define m = Character("Mom", color = "#b73176")
 define j = Character("Jack", color = "#ffd621")
 
+transform smallleft:
+    zoom 0.5
+    xalign 0.0
+    yalign 1.0
+
+transform smallright:
+    zoom 0.5
+    xalign 1.6
+    yalign 1.0
+
 label start:
     play music "snoring-71560.mp3" fadein 1.0 volume 3.6
     pause 3.5
@@ -64,11 +74,44 @@ label start:
     j "Theo... I have really bad news..."
     show theo sad at smallright with dissolve
     t "What is it, Jack? Is it about my grade? Oh no! It's not about that science test, is it?!"
-    play sound ""
-    j ""
-    j ""
-
-
+    play sound "sah.mp3" volume 4.5
+    j "Ah... I wish it was just about that... But look, don't freak out, okay? Just listen to me..."
+    t "Jack? You are making me really nervous... Just tell me already!"
+    j "Here it goes then... Out English teacher, Ms. Brown, is..."
+    t "Is what? Shecdualing a pop quiz today?"
+    j "Oh no, it's not that... She's... gone..."
+    scene black with vpunch
+    play sound "way.mp3" volume 5.0
+    t "Gone? You mean... she's dead...?"
+    play music "old.mp3" fadein 0.9
+    t "No... no! This can't be real! THis can't be hapening!"
+    t "Even though I always said I hated English class, even though I argued with Ms. Brown more times than I can count...."
+    play sound "freesound_community-clear-throat-85636.mp3" volume 3.0
+    $ renpy.music.set_pause(True, channel = "music")
+    j "Ahem, sorry to interrupt, but 12 times to be exact, you're welcome."
+    t "Oh I didn't realize that many... Anyway..."
+    $ renpy.music.set_pause(False, channel = "music")
+    t "Deep down, I respected Ms. Brown so much.. I just... never showed it..."
+    t "If I had known this day would come so fast, I swear I would never have been so mean. I would have raised my hand for evry question. I would have written every essay with my whole heart. I would have been quiet in every single class, listening to every word she said as if it were the most important lesson of my life."
+    t "Oh... Ms. Brown... how could you leave us like this? You were not just an English teacher, you were a chapter in my life that I didn't know I would miss so much!"
+    t "From thisn dat forward, English will be my favorite subject!"
+    play sound "sad.mp3" volume 3.5
+    t "Rest in peace, Ms. Brown..."
+    play sound "haha.mp3" volume 3.5
+    pause 2.0
+    play sound "mrstokes302-huh-sfx-418238.mp3" volume 3.5
+    t "Huh?"
+    t "Why are people laughing?"
+    t "Wait..."
+    play music "cartoon-funny-462261.mp3" 
+    scene school with vpunch
+    show jack smile at smallright with moveinright
+    play sound "freesound_community-clear-throat-85636.mp3" volume 3.0
+    j "Ahem... Theo! That was a great speech you just gave... in front of the whole school!"
+    j "Your English teacher must be sooo pround!"
+    show theo sad at smallright with moveinright
+    t "Jack, you... you were recording me the whole time?"
+    show jack laugh at smallleft with dissolve
     
 
     return

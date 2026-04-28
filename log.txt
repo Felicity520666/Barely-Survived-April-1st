@@ -1,32 +1,22 @@
-2026-04-27 13:33:09 UTC
+2026-04-27 15:29:50 UTC
 macOS-15.7.3-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
 Early init took 21 ms
 Loading error handling took 11 ms
-Loading script took 60 ms
+Loading script took 51 ms
 Loading save slot metadata took 11 ms
 Loading persistent took 0 ms
-Running init code took 16 ms
-Loading analysis data took 1 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 2 ms
-Backing up script files to '/Users/felicity/Library/RenPy/backups/Barely Survived April 1st':
-Dump and make backups took 14 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 13 ms
+
+File "game/script.rpy", line 90: expected end of line.
+    pause music fadeout 1.0
+                ^
+
+File "game/script.rpy", line 93: expected statement.
+    unpause music
+                 ^
 DPI scale factor: 1.000000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 3 ms
-Save screen analysis took 4 ms
-Save pyanalysis took 0 ms
-Save bytecode took 12 ms
-Running _start took 0 ms
-Interface start took 250 ms
+Interface start took 172 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -40,31 +30,3 @@ Screen sizes: virtual=(1920, 1080) physical=(1470, 825) drawable=(2940, 1650)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1470, 825) drawable=(2940, 1650)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 57, in script
-    show jack worry at smallleft with moveinright
-  File "renpy/ast.py", line 1357, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 726, in show_imspec
-    at_list = [renpy.python.py_eval(i) for i in at_list]
-               ~~~~~~~~~~~~~~~~~~~~^^^                  
-  File "renpy/python.py", line 1292, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1285, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 57, in <module>
-    show jack worry at smallleft with moveinright
-                        ^^^^^^^^^                
-NameError: name 'smallleft' is not defined
-
-While running game code:
-  File "game/script.rpy", line 57, in script
-    show jack worry at smallleft with moveinright
-  File "game/script.rpy", line 57, in <module>
-    show jack worry at smallleft with moveinright
-                        ^^^^^^^^^                
-NameError: name 'smallleft' is not defined
