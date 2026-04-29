@@ -10,7 +10,7 @@ transform smallleft:
 
 transform smallright:
     zoom 0.5
-    xalign 1.1
+    xalign 1.0
     yalign 1.0
 
 label start:
@@ -78,24 +78,24 @@ label start:
     play sound "sah.mp3" volume 4.5
     j "Ah... I wish it was just about that... But look, don't freak out, okay? Just listen to me..."
     t "Jack? You are making me really nervous... Just tell me already!"
-    j "Here it goes then... Out English teacher, Ms. Brown, is..."
-    t "Is what? Shecdualing a pop quiz today?"
+    j "Here goes then... Our English teacher, Ms. Brown, is..."
+    t "Is what? Scheduling a pop quiz today?"
     j "Oh no, it's not that... She's... gone..."
     scene uuu with vpunch
     play sound "way.mp3" volume 5.0
     t "Gone? You mean... she's dead...?"
     play music "old.mp3" fadein 0.9
-    t "No... no! This can't be real! THis can't be hapening!"
+    t "No... no! This can't be real! This can't be happening!"
     t "Even though I always said I hated English class, even though I argued with Ms. Brown more times than I can count...."
     play sound "freesound_community-clear-throat-85636.mp3" volume 3.0
     $ renpy.music.set_pause(True, channel = "music")
     j "Ahem, sorry to interrupt, but 12 times to be exact, you're welcome."
     t "Oh I didn't realize that many... Anyway..."
     $ renpy.music.set_pause(False, channel = "music")
-    t "Deep down, I respected Ms. Brown so much.. I just... never showed it..."
-    t "If I had known this day would come so fast, I swear I would never have been so mean. I would have raised my hand for evry question. I would have written every essay with my whole heart. I would have been quiet in every single class, listening to every word she said as if it were the most important lesson of my life."
+    t "Deep down, I respected Ms. Brown so much... I just... never showed it..."
+    t "If I had known this day would come so fast, I swear I would never have been so mean. I would have raised my hand for every question. I would have written every essay with my whole heart. I would have been quiet in every single class, listening to every word she said as if it were the most important lesson of my life."
     t "Oh... Ms. Brown... how could you leave us like this? You were not just an English teacher, you were a chapter in my life that I didn't know I would miss so much!"
-    t "From thisn dat forward, English will be my favorite subject!"
+    t "From this day forward, English will be my favorite subject!"
     play sound "sad.mp3" volume 3.5
     t "Rest in peace, Ms. Brown..."
     stop music fadeout 1.0
@@ -110,7 +110,7 @@ label start:
     show jack smile at smallleft with moveinright
     play sound "freesound_community-clear-throat-85636.mp3" volume 3.0
     j "Ahem... Theo! That was a great speech you just gave... in front of the whole school!"
-    j "Your English teacher must be sooo pround!"
+    j "Your English teacher must be sooo proud!"
     show theo sad at smallright with moveinright
     t "Jack, you... you were recording me the whole time?"
     show theo embarrassed at smallright with dissolve
@@ -128,43 +128,55 @@ label start:
     t "Ah... That was sooooo embarrassing... Jack is such a jerk!"
     show theo think at smallright with dissolve
     t "Ohhoho, wait, Jack isn't here yet!"
-    t "it's April Fools' right? No one is gonna blame me for having something exciting..."
+    t "It's April Fools', right? No one is gonna blame me for planning something {i}exciting...{/i}"
     t "Just you wait Jack!"
     scene pin with dissolve
     play sound "lol.mp3" volume 3.5
-    t "Hum, Jack, I'll let you have a memerable April Fools'!"
-    t "I even put 520 glue so the pin stucks to the chair. Mauhahahahaha!"
+    t "Hum, Jack, I'll make this April Fools' {b}memorable{/b} for you!"
+    t "I even used super glue so the pin sticks to the chair. Muahahahaha!"
     scene teacher with pixellate
-    b "Okay, class! BEfore the class starts, I want to say, I know today is April Fools' Day, but I don't want any of you to pull ANY pranks in class."
+    b "Okay, class! Before the class starts, I want to say, I know today is April Fools' Day, but I don't want any of you to pull ANY pranks in class."
     scene teacher mad with dissolve
     b "If I catch anyone pranking others, I will take off 10 points from your test grade!"
+    scene tmw with dissolve
     show theo shy at smallright with dissolve
     t "Oh no... Oh no no no no no! If Jack sits on that chair he's gonna let Ms. Brown know that I pranked him!"
-    t "I can't spiritually survive losing another 10 ponits from my alreadt tragic grade!"
+    t "I can't spiritually survive losing another 10 points from my already tragic grade!"
     show theo sad at smallright with dissolve
     t "There's only one way..."
     scene talk with pushright
     play sound "u_xg7ssi08yr-cartoon-phone-babble-404405.mp3" 
     pause 2.5
     scene teacher mad with dissolve
-    b "Theo! Why are you sitting beside Leon? You two keep talking! You'll distracte the whole class!"
-    b "Jack's not here yet, why don't you take his seat and sut beside class monitor Lucy? She'll make sure to keep you quiet!"
+    b "Theo! Why are you sitting beside Leon? You two keep talking! You'll distract the whole class!"
+    b "Jack's not here yet, so why don't you take his seat and sit beside class monitor Lucy? She'll make sure to keep you quiet!"
     t "Yes, ma'am!"
     play sound "no-96018.mp3" volume 3.6
-    t "{i}Nooooo, this is truly double damage! I have to sit on nails while pretending all's normal, and survuve an entire class sitting next to the Great Witch Lucy...{/i}"
+    scene tmw with dissolve
+    show theo sad at smallright with dissolve
+    t "{i}Nooooo, this is truly double damage! I have to sit on nails while pretending everything's normal, and survive an entire class sitting next to the Great Witch Lucy...{/i}"
     scene bell with squares
     play music "emg5991-school-bell-310293.mp3" 
     pause 3.5
     scene teacher with fade
+    stop music fadeout 1.5
     b "Okay, class is starting, move into your seats!"
+    scene tw with dissolve
     show theo sad at smallleft with moveinleft
-    t "Here it goes..."
+    t "Here goes..."
     hide theo sad with moveoutright
+    play sound "freesound_community-ouch-43811.mp3" volume 3.5
+    scene oblack with vpunch
+    pause 1.5
     scene 0r with hpunch
     play sound "myinstants.mp3" volume 2.5
     pause 1.0
     scene 0 with dissolve
     pause 1.0
+    play sound "u_l5xum8z250-losing-horn-313723.mp3" volume 2.5
+    scene end with fade
+    pause 4.5
+
 
     return
 
