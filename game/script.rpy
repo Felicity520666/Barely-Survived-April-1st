@@ -1,6 +1,7 @@
 define t = Character("Theo", color = "#ffa500")
 define m = Character("Mom", color = "#b73176")
 define j = Character("Jack", color = "#ffd621")
+define b = Character("Ms.Brown", color = "#00883b")
 
 transform smallleft:
     zoom 0.5
@@ -9,7 +10,7 @@ transform smallleft:
 
 transform smallright:
     zoom 0.5
-    xalign 1.6
+    xalign 1.1
     yalign 1.0
 
 label start:
@@ -80,7 +81,7 @@ label start:
     j "Here it goes then... Out English teacher, Ms. Brown, is..."
     t "Is what? Shecdualing a pop quiz today?"
     j "Oh no, it's not that... She's... gone..."
-    scene black with vpunch
+    scene uuu with vpunch
     play sound "way.mp3" volume 5.0
     t "Gone? You mean... she's dead...?"
     play music "old.mp3" fadein 0.9
@@ -97,6 +98,7 @@ label start:
     t "From thisn dat forward, English will be my favorite subject!"
     play sound "sad.mp3" volume 3.5
     t "Rest in peace, Ms. Brown..."
+    stop music fadeout 1.0
     play sound "haha.mp3" volume 3.5
     pause 2.0
     play sound "mrstokes302-huh-sfx-418238.mp3" volume 3.5
@@ -105,13 +107,65 @@ label start:
     t "Wait..."
     play music "cartoon-funny-462261.mp3" 
     scene school with vpunch
-    show jack smile at smallright with moveinright
+    show jack smile at smallleft with moveinright
     play sound "freesound_community-clear-throat-85636.mp3" volume 3.0
     j "Ahem... Theo! That was a great speech you just gave... in front of the whole school!"
     j "Your English teacher must be sooo pround!"
     show theo sad at smallright with moveinright
     t "Jack, you... you were recording me the whole time?"
+    show theo embarrassed at smallright with dissolve
     show jack laugh at smallleft with dissolve
-    
+    play sound "af.mp3" volume 9.0
+    j "Hahahaha!!! April Fools!!!"
+    scene 1r with hpunch
+    play sound "myinstants.mp3" volume 2.5
+    pause 1.0
+    scene 1 with dissolve
+    pause 1.0
+    play music "friends.mp3" fadein 1.5
+    scene empty with blinds
+    show theo shy at smallright with moveinright
+    t "Ah... That was sooooo embarrassing... Jack is such a jerk!"
+    show theo think at smallright with dissolve
+    t "Ohhoho, wait, Jack isn't here yet!"
+    t "it's April Fools' right? No one is gonna blame me for having something exciting..."
+    t "Just you wait Jack!"
+    scene pin with dissolve
+    play sound "lol.mp3" volume 3.5
+    t "Hum, Jack, I'll let you have a memerable April Fools'!"
+    t "I even put 520 glue so the pin stucks to the chair. Mauhahahahaha!"
+    scene teacher with pixellate
+    b "Okay, class! BEfore the class starts, I want to say, I know today is April Fools' Day, but I don't want any of you to pull ANY pranks in class."
+    scene teacher mad with dissolve
+    b "If I catch anyone pranking others, I will take off 10 points from your test grade!"
+    show theo shy at smallright with dissolve
+    t "Oh no... Oh no no no no no! If Jack sits on that chair he's gonna let Ms. Brown know that I pranked him!"
+    t "I can't spiritually survive losing another 10 ponits from my alreadt tragic grade!"
+    show theo sad at smallright with dissolve
+    t "There's only one way..."
+    scene talk with pushright
+    play sound "u_xg7ssi08yr-cartoon-phone-babble-404405.mp3" 
+    pause 2.5
+    scene teacher mad with dissolve
+    b "Theo! Why are you sitting beside Leon? You two keep talking! You'll distracte the whole class!"
+    b "Jack's not here yet, why don't you take his seat and sut beside class monitor Lucy? She'll make sure to keep you quiet!"
+    t "Yes, ma'am!"
+    play sound "no-96018.mp3" volume 3.6
+    t "{i}Nooooo, this is truly double damage! I have to sit on nails while pretending all's normal, and survuve an entire class sitting next to the Great Witch Lucy...{/i}"
+    scene bell with squares
+    play music "emg5991-school-bell-310293.mp3" 
+    pause 3.5
+    scene teacher with fade
+    b "Okay, class is starting, move into your seats!"
+    show theo sad at smallleft with moveinleft
+    t "Here it goes..."
+    hide theo sad with moveoutright
+    scene 0r with hpunch
+    play sound "myinstants.mp3" volume 2.5
+    pause 1.0
+    scene 0 with dissolve
+    pause 1.0
 
     return
+
+
